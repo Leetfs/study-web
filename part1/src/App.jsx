@@ -14,7 +14,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>你好世界</h1>
+      <h1>name and year</h1>
       <Hello name = {name}  age = {age}  />
       <Hello name="github" age={"不知道"} />
     </div>
