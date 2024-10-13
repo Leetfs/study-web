@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState,useEffect  } from 'react'
 
 const Hello = ({name,age}) => {
 
@@ -19,7 +19,7 @@ const Hello = ({name,age}) => {
 const App = () => {
   const [counter, setCounter] = useState(0)
 
-  setTimeout(
+  useEffect(
     () => setCounter(counter + 1),
     1000
   )
@@ -28,6 +28,7 @@ const App = () => {
     name: 'Arto Hellas',
     age: 35,
   }
+
 
   return (
     <div>
